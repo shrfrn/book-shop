@@ -8,7 +8,7 @@ var gLangs = {
     English: {code: 'en', dir: 'ltr'},
     עברית: {code: 'he', dir: 'rtl'},
 };
-
+ 
 var gTrans = {
     'welcome-title': {
         en: 'Welcome to my bookshop!',
