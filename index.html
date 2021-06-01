@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/book-shop.css">
+    <title>Book Shop</title>
+</head>
+<body onload="init()">
+    <h1>Book Shop</h1>
+    <button onclick="onAddNewBook()">+</button>
+    <table>
+        <thead>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Price</td>
+            <td>imgUrl</td>
+            <td>Actions</td>
+        </thead>
+        <tbody class="book-list">
+            
+        </tbody>
+    </table>
+    <button onclick="movePage(-1)">Prev</button>
+    <span class="page-buttons"></span>
+    <button onclick="movePage(1)">Next</button>
+    <section class="modal-bg hide">
+        <section class="modal hide">
+            <h4 class='book-id'>Book ID:</h4>
+            <p class="lable">name:</p>
+            <input name="book-name" type="text" autocomplete="off" />
+            <p class="lable">price:</p>
+            <input name="book-price" type="text" autocomplete="off" />
+            <img class="book-img" src="" alt="">
+            <p class="lable">rating:</p>
+            <button class="inc-btn" onclick="incrementRating(-1)">-</button>
+            <input name="book-rating" type="text" autocomplete="off" />
+            <button class="inc-btn" onclick="incrementRating(1)">+</button>
+            <button onclick="onCloseModal()">OK</button>
+        </section>
+    </section>
+    <script src="js/utils.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/book-serivces.js"></script>
+    <script src="js/book-shop.js"></script>
+</body>
+</html>
